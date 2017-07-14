@@ -492,30 +492,45 @@ footer{
 	}
 }
 
-.box {
-	width: 100px;
-	height: 100px;
-	background-color: red;
-	-webkit-animation: move;
-	-o-animation: move;
-	animation: move;
-	animation-duration: 20s;
+@media (min-width: 0px) and  (max-width: 480px) {
+	.main {
+		&-text {
+			h1{
+				font-size: 24px;
+			}
+		}
+	}
+	.section-header {
+		h2{
+			font-size: 22px;
+		}
+	}
+	.process-box{
+		margin-top: 70px;
+	}
+}
+
+@media (min-width: 481px) and  (max-width: 767px) {
+	.process-box{
+		margin-top: 70px;
+	}
+}
+
+@media (min-width: 768px) and  (max-width: 991px) {
+	.process-box{
+		margin-top: 70px;
+	}
+}
+
+@media (min-width: 992px) and  (max-width: 1199px) {
+	
+}
+
+@media (min-width: 1200px) and  (max-width: 1600px) {
+	
+}
+@media (min-width: 1601px) {
+	
 }
 
 
-@keyframes move {
-	from {
-		width: 150px;
-		height: 150px;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-ms-border-radius: 50%;
-		-o-border-radius: 50%;
-		border-radius: 50%;
-	}
-	to {
-		width: 100px;
-		height: 100px;
-		background-color: green;
-	}
-}
